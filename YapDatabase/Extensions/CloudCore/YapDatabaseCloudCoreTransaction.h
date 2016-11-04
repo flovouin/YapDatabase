@@ -11,6 +11,9 @@
 
 @interface YapDatabaseCloudCoreTransaction : YapDatabaseExtensionTransaction
 
+- (id)initWithParentConnection:(YapDatabaseCloudCoreConnection *)inParentConnection
+           databaseTransaction:(YapDatabaseReadTransaction *)inDatabaseTransaction;
+
 #pragma mark Operation Handling
 
 /**
