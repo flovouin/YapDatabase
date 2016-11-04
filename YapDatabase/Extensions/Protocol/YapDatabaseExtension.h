@@ -10,6 +10,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YapDatabaseExtension : NSObject
 
+- (YapDatabaseExtensionConnection *)newConnection:(YapDatabaseConnection __unused *)databaseConnection;
+
 /**
  * After an extension has been successfully registered with a database,
  * the registeredName property will be set by the database.
