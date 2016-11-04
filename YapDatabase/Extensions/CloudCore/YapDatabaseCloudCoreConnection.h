@@ -5,8 +5,9 @@
 #import <Foundation/Foundation.h>
 #import "YapDatabaseExtensionConnection.h"
 
-@class YapDatabaseCloudCore;
+NS_ASSUME_NONNULL_BEGIN
 
+@class YapDatabaseCloudCore;
 
 @interface YapDatabaseCloudCoreConnection : YapDatabaseExtensionConnection
 
@@ -15,4 +16,9 @@
 **/
 @property (nonatomic, strong, readonly) YapDatabaseCloudCore *cloudCore;
 
+- (id)initWithParent:(YapDatabaseCloudCore *)inParent databaseConnection:(YapDatabaseConnection *)inDbC;
+- (void)prepareForReadWriteTransaction;
+
 @end
+
+NS_ASSUME_NONNULL_END
