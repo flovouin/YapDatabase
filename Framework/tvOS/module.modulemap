@@ -31,17 +31,37 @@ framework module YapDatabase {
 		header "YapDatabaseViewChange.h"
 		header "YapDatabaseViewRangeOptions.h"
 	}
+	
+	// Extension: AutoView
+	explicit module YapDatabaseAutoView {
+		header "YapDatabaseAutoView.h"
+		header "YapDatabaseAutoViewConnection.h"
+		header "YapDatabaseAutoViewTransaction.h"
+		header "YapDatabaseViewTypes.h"
 
-    // Extension: AutoView
+		export YapDatabaseView
+	}
 
-    explicit module YapDatabaseAutoView {
-        header "YapDatabaseViewTypes.h"
-        header "YapDatabaseAutoView.h"
-        header "YapDatabaseAutoViewConnection.h"
-        header "YapDatabaseAutoViewTransaction.h"
+	// Extension: ManualView
+	explicit module YapDatabaseManualView {
+		header "YapDatabaseManualView.h"
+		header "YapDatabaseManualViewConnection.h"
+		header "YapDatabaseManualViewTransaction.h"
 
-        export YapDatabaseView
-    }
+		export YapDatabaseView
+	}
+
+	// Extension: CloudCore
+	explicit module YapDatabaseCloudCore {
+		header "YapDatabaseCloudCore.h"
+		header "YapDatabaseCloudCoreConnection.h"
+		header "YapDatabaseCloudCoreOptions.h"
+		header "YapDatabaseCloudCoreTransaction.h"
+		header "YapDatabaseCloudCoreGraph.h"
+		header "YapDatabaseCloudCorePipeline.h"
+		header "YapDatabaseCloudCorePipelineDelegate.h"
+		header "YapDatabaseCloudCoreOperation.h"
+	}
 
 	// Extension: FilteredView
 	
@@ -95,7 +115,7 @@ framework module YapDatabase {
 		header "YapDatabaseSearchResultsViewTransaction.h"
 		header "YapDatabaseSearchQueue.h"
 		
-		export YapDatabaseView
+		export YapDatabaseAutoView
 		export YapDatabaseFullTextSearch
 	}
 	
