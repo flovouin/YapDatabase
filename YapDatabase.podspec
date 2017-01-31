@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "YapDatabase"
-  s.version      = "2.9.3"
+  s.version      = "3.0.0"
   s.summary      = "A key/value store built atop sqlite for iOS & Mac."
   s.homepage     = "https://github.com/yapstudios/YapDatabase"
   s.license      = 'MIT'
@@ -61,6 +61,11 @@ Pod::Spec.new do |s|
       sse.subspec 'SecondaryIndex' do |ssee|
         ssee.source_files = 'YapDatabase/Extensions/SecondaryIndex/**/*.{h,m,mm,c}'
         ssee.private_header_files = 'YapDatabase/Extensions/SecondaryIndex/Internal/*.h'
+      end
+
+      sse.subspec 'CloudCore' do |ssee|
+        ssee.source_files = 'YapDatabase/Extensions/CloudCore/**/*.{h,m,mm,c}'
+        ssee.private_header_files = 'YapDatabase/Extensions/CloudCore/Internal/*.h'
       end
 
       sse.subspec 'CrossProcessNotification' do |ssee|
@@ -201,6 +206,11 @@ Pod::Spec.new do |s|
         ssee.tvos.deployment_target = '9.0'
         ssee.source_files = 'YapDatabase/Extensions/CloudKit/**/*.{h,m,mm,c}'
         ssee.private_header_files = 'YapDatabase/Extensions/CloudKit/Internal/*.h'
+      end
+
+      sse.subspec 'CloudCore' do |ssee|
+        ssee.source_files = 'YapDatabase/Extensions/CloudCore/**/*.{h,m,mm,c}'
+        ssee.private_header_files = 'YapDatabase/Extensions/CloudCore/Internal/*.h'
       end
 
       sse.subspec 'RTreeIndex' do |ssee|
