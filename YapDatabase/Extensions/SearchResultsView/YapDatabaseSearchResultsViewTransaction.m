@@ -713,8 +713,8 @@ static NSString *const ext_key_query           = @"query";
 	  (YapDatabaseSearchResultsViewOptions *)searchResultsView->options;
 	
 	__unsafe_unretained NSString *collection = collectionKey.collection;
-	__unsafe_unretained NSString *key = collectionKey.key;
-	
+//	__unsafe_unretained NSString *key = collectionKey.key;
+
 	NSAssert((searchResultsView->parentViewName != nil), @"Improper method invocation!");
 	
 	// Should we ignore the row based on the allowedCollections ?
@@ -733,7 +733,7 @@ static NSString *const ext_key_query           = @"query";
 	
 	NSString *group = [parentViewTransaction groupForRowid:rowid];
 	
-	NSString *snippet = nil;
+//	NSString *snippet = nil;
 	BOOL matchesQuery = NO;
 	
 	if (group)
@@ -886,7 +886,7 @@ static NSString *const ext_key_query           = @"query";
 		group = locator.group;
 	}
 	
-	NSString *snippet = nil;
+//	NSString *snippet = nil;
 	BOOL matchesQuery = NO;
 	
 	if (group)
@@ -957,7 +957,7 @@ static NSString *const ext_key_query           = @"query";
 	else
 	{
 		__unsafe_unretained YapDatabaseSearchResultsViewConnection *searchResultsViewConnection =
-		  (YapDatabaseViewConnection *)parentConnection;
+		  (YapDatabaseSearchResultsViewConnection *)parentConnection;
 		
 		YapDatabaseViewGrouping *grouping = nil;
 		YapDatabaseViewSorting *sorting = nil;
@@ -1010,7 +1010,7 @@ static NSString *const ext_key_query           = @"query";
 	else
 	{
 		__unsafe_unretained YapDatabaseSearchResultsViewConnection *searchResultsViewConnection =
-		  (YapDatabaseViewConnection *)parentConnection;
+		  (YapDatabaseSearchResultsViewConnection *)parentConnection;
 		
 		YapDatabaseViewGrouping *grouping = nil;
 		YapDatabaseViewSorting *sorting = nil;
@@ -1059,7 +1059,7 @@ static NSString *const ext_key_query           = @"query";
 	else
 	{
 		__unsafe_unretained YapDatabaseSearchResultsViewConnection *searchResultsViewConnection =
-		  (YapDatabaseViewConnection *)parentConnection;
+		  (YapDatabaseSearchResultsViewConnection *)parentConnection;
 		
 		YapDatabaseViewGrouping *grouping = nil;
 		YapDatabaseViewSorting *sorting = nil;
@@ -1121,7 +1121,7 @@ static NSString *const ext_key_query           = @"query";
 	else
 	{
 		__unsafe_unretained YapDatabaseSearchResultsViewConnection *searchResultsViewConnection =
-		  (YapDatabaseViewConnection *)parentConnection;
+		  (YapDatabaseSearchResultsViewConnection *)parentConnection;
 		
 		YapDatabaseViewGrouping *grouping = nil;
 		YapDatabaseViewSorting *sorting = nil;
@@ -1186,7 +1186,7 @@ static NSString *const ext_key_query           = @"query";
 	else
 	{
 		__unsafe_unretained YapDatabaseSearchResultsViewConnection *searchResultsViewConnection =
-		  (YapDatabaseViewConnection *)parentConnection;
+		  (YapDatabaseSearchResultsViewConnection *)parentConnection;
 	
 		YapDatabaseViewGrouping *grouping = nil;
 		YapDatabaseViewSorting *sorting = nil;
@@ -1261,7 +1261,7 @@ static NSString *const ext_key_query           = @"query";
 	else
 	{
 		__unsafe_unretained YapDatabaseSearchResultsViewConnection *searchResultsViewConnection =
-		  (YapDatabaseViewConnection *)parentConnection;
+		  (YapDatabaseSearchResultsViewConnection *)parentConnection;
 		
 		YapDatabaseViewGrouping *grouping = nil;
 		YapDatabaseViewSorting *sorting = nil;
@@ -1337,7 +1337,7 @@ static NSString *const ext_key_query           = @"query";
 	else
 	{
 		__unsafe_unretained YapDatabaseSearchResultsViewConnection *searchResultsViewConnection =
-		  (YapDatabaseViewConnection *)parentConnection;
+		  (YapDatabaseSearchResultsViewConnection *)parentConnection;
 	
 		YapDatabaseViewGrouping *grouping = nil;
 		YapDatabaseViewSorting *sorting = nil;

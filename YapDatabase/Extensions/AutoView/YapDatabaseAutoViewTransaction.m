@@ -463,7 +463,7 @@
 {
 	YDBLogAutoTrace();
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	YapDatabaseViewSorting *sorting = nil;
 	[viewConnection getGrouping:NULL sorting:&sorting];
@@ -881,7 +881,7 @@
 {
 	YDBLogAutoTrace();
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	YapDatabaseBlockInvoke blockInvokeBitMask = YapDatabaseBlockInvokeOnInsertOnly;
 	
@@ -914,7 +914,7 @@
 {
 	YDBLogAutoTrace();
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	YapDatabaseBlockInvoke blockInvokeBitMask = YapDatabaseBlockInvokeIfObjectModified |
 	                                            YapDatabaseBlockInvokeIfMetadataModified;
@@ -945,7 +945,7 @@
 {
 	YDBLogAutoTrace();
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	YapDatabaseBlockInvoke blockInvokeBitMask = YapDatabaseBlockInvokeIfObjectModified;
 	
@@ -987,7 +987,7 @@
 {
 	YDBLogAutoTrace();
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	YapDatabaseBlockInvoke blockInvokeBitMask = YapDatabaseBlockInvokeIfMetadataModified;
 	
@@ -1032,7 +1032,7 @@
 {
 	YDBLogAutoTrace();
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	YapDatabaseBlockInvoke blockInvokeBitMask = YapDatabaseBlockInvokeIfObjectTouched;
 	
@@ -1086,7 +1086,7 @@
 {
 	YDBLogAutoTrace();
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	YapDatabaseBlockInvoke blockInvokeBitMask = YapDatabaseBlockInvokeIfMetadataTouched;
 	
@@ -1140,7 +1140,7 @@
 {
 	YDBLogAutoTrace();
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	YapDatabaseBlockInvoke blockInvokeBitMask =
 	  YapDatabaseBlockInvokeIfObjectTouched | YapDatabaseBlockInvokeIfMetadataTouched;
@@ -1500,7 +1500,7 @@
 		return;
 	}
 	
-	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseViewConnection *)parentConnection;
+	__unsafe_unretained YapDatabaseAutoViewConnection *viewConnection = (YapDatabaseAutoViewConnection *)parentConnection;
 	
 	[viewConnection setGrouping:grouping
 	                    sorting:sorting

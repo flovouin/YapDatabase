@@ -167,9 +167,9 @@ static NSString *const changeset_key_changes    = @"changes";
 - (instancetype)initWithParentConnection:(YapDatabaseViewConnection *)parentConnection
                      databaseTransaction:(YapDatabaseReadTransaction *)databaseTransaction;
 
-- (NSMutableArray *)classVersions;
+//- (NSMutableArray *)classVersions;
 - (void)dropTablesForOldClassVersion:(int)oldClassVersion;
-- (void)upgradeClass:(NSString *)className fromOldVersion:(int)oldClassVersion;
+//- (void)upgradeClass:(NSString *)className fromOldVersion:(int)oldClassVersion;
 
 - (BOOL)createTables;
 - (BOOL)populateView;
